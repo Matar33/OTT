@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <link rel="icon" href="x.avif">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My OTT</title>
+    <style>
+        body{
+          background-color: black;
+        }
+        .nav{
+            height: 50px;
+            width: 100%;
+            border: solid wheat;
+            background-image: linear-gradient(to right,rgb(22, 6, 6), rgb(147, 115, 52), rgb(104, 104, 110),0.4 );
+            display: flex;
+            background-color: rgb(202, 197, 184);
+            align-items: center;
+            position: fixed;
+            z-index: 100;
+            top: 0;
+        }
+        
+        .img{
+            height: 42px;
+            width: 85px;
+            margin: 1px 1px 1px;
+            
+        }
+        .item a{
+            color: aliceblue;
+            position: relative;
+            left: 350px;
+            padding: 20px;
+            text-decoration: none;
+            font-size: 20px;
+            
+            
+        }
+        .item:hover a{
+          color: black;
+          filter: blur(1px);
+          
+        }
+        .item a:hover{
+            color: rgb(7, 14, 228);
+            font-size: 25px;
+            filter: blur(0px);
+          
+        }  
+        #carouselExampleAutoplaying{
+          margin-top: 35px;
+          margin-right: 20px;
+        
+        }
+        
+        .freuent h2{
+          font-size: 40px;
+          display: inline;
+          color: rgb(254, 254, 252);
+        }
+        .freuent h2:hover{
+          color: rgb(12, 90, 158);
+          font-size: 55px;
+        }
+        .freuent-img  {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         justify-content: space-evenly;          
+        }
+        .freuent-img img{
+          height: 300px;
+          width: 250px;
+          border-radius: 20px;
+          
+          
+        }
+        .freuent-img img:hover{
+          transform: translate(-5px);
+          transform: scale(1.2);
+          filter: drop-shadow();
+          transition: all 0.5s ease-in-out;
+          border-radius: 50px;
+          box-shadow: 3px 3px 50px beige;
+        }
+        
+        .Recent h2{
+          font-size: 40px;
+          display: inline;
+          color: rgb(237, 249, 237);
+
+        }
+        .Recent h2:hover{
+          color: rgb(12, 90, 158);
+          font-size: 55px;
+
+        }
+        .Top h2{
+          font-size: 40px;
+          display: inline;
+          color: rgb(247, 247, 247);
+
+        }
+        .Top h2:hover{
+          color: rgb(12, 90, 158);
+          font-size: 55px;
+
+        }
+        .Fav h2{
+          padding-top: 60px;
+          font-size: 40px;
+          display: inline;
+          color: rgb(247, 249, 247);
+
+        }
+        .Fav h2:hover{
+          
+          color: rgb(12, 90, 158);
+          font-size: 55px;
+
+        }
+        .about{
+          padding-top: 60px;
+          font-size: 50px;
+          color: aliceblue;
+        }
+
+
+        
+    </style>
+
+</head>
+<body>
+    <nav class="nav">
+       <div class="logo">
+        <img src="inlogo.jpg" alt="" class="img">
+       </div>
+       <div class="item">
+           <a href="#carouselExampleAutoplaying">Home</a>
+           <a href="#freuent">Frequently watched</a>
+           <a href="#Recent">Recently watched</a>
+           <a href="#top">Top rated</a>
+           <a href="#fav">Favourites</a>
+           <a href="about">About</a>
+           <a href="">Sign in/Sing up</a>
+       </div>
+    </nav>
+    <!-- home page slide starts --> 
+    
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-inner">
+        <div class="carousel-item active"  style="height: 680px;width: 1500px;position: relative;top: 20px;left: 20px;">
+          <img src="slide1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" style="height: 680px;width: 100;position: relative;top: 20px;left: 20px;">
+          <img src="slide2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item"  style="height: 680px;width: 1500px ;position: relative;top: 20px;left: 20px;">
+          <img src="slide3.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+<!-- frequent watched -->
+<div id="freuent" class="freuent" style="padding-top: 50px;">
+  <h2>Frequently watched</h2>
+  <div class="freuent-img"> 
+    <img src="14.jpg" alt="">
+    <img src="2.jpg" alt="">
+    <img src="3.jpg" alt="">
+    <img src="4.jpg" alt="">
+    <img src="5.jpg" alt="">
+    <img src="6.jpg" alt="">
+    <img src="7.jpg" alt="">
+    <img src="8.jpg" alt="">
+    <img src="9.jpg" alt="">
+    <img src="10.jpg" alt="">
+    <img src="11.jpg" alt="">
+    <img src="12.jpg" alt="">
+  </div>
+</div>
+
+<!-- Recently watched -->
+<div class="Recent" id="Recent"  style="padding-top: 50px;">
+  <h2>Recently watched</h2>
+  <div class="freuent-img">
+  <img src="r1.jpg" alt="">
+  <img src="r2.jpg" alt="">
+  <img src="r3.jpg" alt="">
+  <img src="r4.jpg" alt="">
+  <img src="r5.jpg" alt="">
+  <img src="r6.jpg" alt="">
+  <img src="r7.jpg" alt="">
+  <img src="r8.jpg" alt="">
+  <img src="r9.jpg" alt="">
+  <img src="r10.jpg" alt="">
+  <img src="r11.jpg" alt="">
+  <img src="r12.jpg" alt="">
+  
+  </div>
+
+</div>
+<!-- Top rated -->
+<div class="Top" id="top"  style="padding-top: 50px;">
+  <h2>Top rated</h2>
+  <div class="freuent-img">
+  <img src="t1.jpg" alt="">
+  <img src="t2.jpg" alt="">
+  <img src="t3.jpg" alt="">
+  <img src="t4.jpg" alt="">
+  <img src="t5.jpg" alt="">
+  <img src="t6.jpg" alt="">
+  <img src="t7.jpg" alt="">
+  <img src="t8.jpg" alt="">
+  <img src="t9.jpg" alt="">
+  <img src="t10.jpg" alt="">
+  <img src="t11.jpg" alt="">
+  <img src="t12.jpg" alt="">
+  </div>
+
+</div>
+<!-- FAV -->
+<div class="Fav" id="fav"  style="padding-top: 50px;">
+  <h2>Favourites</h2>
+  <div class="freuent-img">
+  <img src="f1.jpg" alt="">
+  <img src="f2.jpg" alt="">
+  <img src="f3.jpg" alt="">
+  <img src="f4.jpg" alt="">
+  <img src="f5.jpg" alt="">
+  <img src="r6.jpg" alt="">
+  <img src="f7.jpg" alt="">
+  <img src="t8.jpg" alt="">
+  <img src="t9.jpg" alt="">
+  <img src="r10.jpg" alt="">
+  <img src="r11.jpg" alt="">
+  <img src="r12.jpg" alt="">
+  </div>
+
+</div>
+
+
+<!-- About -->
+<div class="about" id="about">
+  <h2>About</h2>
+
+</div>
+
+</body>
+</html>
